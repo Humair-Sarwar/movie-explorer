@@ -6,7 +6,7 @@ const MovieList = ({ movies, loading, switchColor }) => {
   if (loading) {
     return (
       <>
-        <div className="grid grid-cols-3 gap-8 w-full my-4!">
+        <div className="grid grid-cols-1 gap-8 w-full my-4! md:grid-cols-3 sm:grid-cols-2">
           <Skelton switchColor={switchColor} />
           <Skelton switchColor={switchColor} />
           <Skelton switchColor={switchColor} />
