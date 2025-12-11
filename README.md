@@ -1,16 +1,88 @@
-# React + Vite
+🎬 Movie Explorer — Mini Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and responsive movie search application built using React, OMDB API, and Tailwind CSS.
+Users can search for movies, view details, toggle themes, and explore trending films with a smooth UI.
 
-Currently, two official plugins are available:
+🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✅ Search Movies in Real-Time
+Type in the search bar and instantly fetch movies from the OMDB API.
 
-## React Compiler
+✅ Beautiful UI with Tailwind CSS
+Fully responsive layout with gradients, shadows, custom animations, and hover effects.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+✅ Light / Dark Theme Toggle
+Switch between themes smoothly using a custom animated toggle button.
 
-## Expanding the ESLint configuration
+✅ Movie Cards with Hover Effects
+Each movie card includes title, year, type, thumbnail, and smooth animations.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+✅ Loading Skeletons
+While movies are loading, skeleton components create a polished user experience.
+
+🛠️ Technologies Used
+Tech	Purpose
+React.js	UI Components + State Management
+Tailwind CSS	Styling & Animations
+OMDB API	Movie data fetching
+React Router	Navigation
+Vite	Fast development environment
+📦 Installation & Setup
+1️⃣ Clone the repository
+git clone https://github.com/your-username/movie-explorer.git
+
+2️⃣ Install dependencies
+npm install
+
+3️⃣ Start the development server
+npm run dev
+
+4️⃣ Add your OMDB API key
+
+You can get one from here → https://www.omdbapi.com/
+
+Update your fetch function:
+
+fetch(`https://www.omdbapi.com/?apikey=YOUR_API_KEY&s=${query}`)
+
+📁 Project Structure
+src/
+ ├── components/
+ │    ├── Navbar.jsx
+ │    ├── MovieCard.jsx
+ │    ├── SwitchColorMode.jsx
+ │    └── SkeletonCard.jsx
+ ├── pages/
+ │    └── Home.jsx
+ ├── App.jsx
+ ├── main.jsx
+ └── styles.css
+
+🎨 UI Highlights
+
+✨ Gradient backgrounds
+✨ Animated hover scaling on cards
+✨ Smooth theme transition
+✨ Search bar with animated background change
+✨ Modern card layout with shadow & overlays
+
+🔥 Future Enhancements (optional suggestions)
+
+Add pagination
+
+Add movie details page
+
+Add favorites system using localStorage
+
+Add infinite scroll
+
+Add loading spinner
+
+🤝 Contributing
+
+Pull requests are welcome.
+For major changes, please open an issue first to discuss the idea.
+
+📜 License
+
+This project is free to use — no license restrictions.
